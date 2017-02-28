@@ -20,9 +20,9 @@
     </div>
 
     <div id="main">
-      <div class="question">
+      <div id="question">
         <div class="row">
-          <form class="col s12">
+          <form id="initialForm" class="col s12">
             <div class="row">
               <div class="col s12" style="padding-bottom:75px;text-align:center;">
                 <span>What fault is being analysed?</span>
@@ -38,9 +38,9 @@
     </div>
 
     <div id="sub" style="display:none;">
-      <div class="question">
+      <div id="question">
         <div class="row">
-          <form class="col s12">
+          <form id="secondForm" class="col s12">
             <div class="row">
               <div class="col s12" style="padding-bottom:75px;text-align:center;">
                 <span>What events could trigger this?</span>
@@ -51,9 +51,12 @@
                   <label for="Fault_1"> Fault : </label>
                 </div>
                 <div class="col offset-s1">
-                  <a id="add" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+                  <a id="add" class="btn-floating btn-large waves-effect waves-light black"><i class="material-icons">add</i></a>
                 </div>
               </div>
+            </div>
+            <div class="render" style="text-align:center;">
+              <a id="render" class="waves-effect waves-light btn black"><i class="material-icons left">launch</i>Render</a>
             </div>
           </form>
         </div>
